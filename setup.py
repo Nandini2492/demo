@@ -1,16 +1,15 @@
-from setuptools import setup
+import setuptools
 
-setup(
-   name='demo',
-   version='0.1.0',
-   # author='An Awesome Coder',
-   # author_email='aac@example.com',
-   packages=[],
-   # scripts=['bin/script1','bin/script2'],
-   # url='http://pypi.python.org/pypi/PackageName/',
-   # license='LICENSE.txt',
-   # description='An awesome package that does something',
-   # long_description=open('README.txt').read(),
-   install_requires=[
-   ],
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name='demo',
+    version='0.0.3',
+    description='Testing installation of Package',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url='https://github.com/Nandini2492/demo.git',
+    packages=['demo'],
+    install_requires=[],
 )
